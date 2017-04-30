@@ -1,8 +1,5 @@
-body {background:linear-gradient(       rgba(51, 255, 0, 0.45),        rgba(0, 55, 255, 0.45)     ), url(https://cloud.githubusercontent.com/assets/25572357/24085193/92435422-0cb4-11e7-9b2b-c1ff61b69af8.png);}
-html { 
-  background: url(https://cloud.githubusercontent.com/assets/25572357/24085193/92435422-0cb4-11e7-9b2b-c1ff61b69af8.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-} 
+html {
+  min-height:100%; 
+  background:linear-gradient(       rgba(51, 255, 0, 0.45),        rgba(0, 55, 255, 0.45)     ), url(https://cloud.githubusercontent.com/assets/25572357/24085193/92435422-0cb4-11e7-9b2b-c1ff61b69af8.png);
+}
+
