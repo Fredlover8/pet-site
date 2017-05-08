@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <body>
   <link rel="stylesheet" href="petsite.css">
 <style>
-body {margin:0;}
+ {margin:0;}
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -27,7 +28,6 @@ body {margin:0;}
 }
 </style>
 </head>
-<body>
 
 <div class="topnav">
   <a class="active" href="#home">Home</a>
@@ -91,9 +91,9 @@ body {font-family: Verdana,sans-serif;}
 
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 10s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 10s;
 }
 
 @-webkit-keyframes fade {
@@ -112,14 +112,13 @@ body {font-family: Verdana,sans-serif;}
 }
 </style>
 </head>
-<body>
+
 
 <div class="slideshow-container">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 5</div>
   <img src="https://cloud.githubusercontent.com/assets/25572357/25829045/ae9b5d10-3408-11e7-8ce4-34902524ac31.jpeg" style="width:100%">
-  <div class="Loving Pet's">Caption Text</div>
 </div>
 
 <div class="mySlides fade">
@@ -166,7 +165,7 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    setTimeout(showSlides, 2000); // Change image every 8 seconds
 }
 </script>
   </body>
