@@ -1,13 +1,11 @@
 
 
-  
-	 <!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
 <head>
 <style>
-body 
-{margin:0;}
-.topnav {
+body {margin:0;}
+.topnav {	
   overflow: hidden;
   background-color: #333;
 }
@@ -28,48 +26,104 @@ body
     background-color: #4CAF50;
     color: white;
 }
-
-.show {display:block;}
 </style>
 </head>
 <body>
 
-<h2>Clickable Dropdown</h2>
-<p>Click on the button to open the dropdown menu.</p>
+<div class="topnav">
+	<a href="index.html">Home</a>
+  <a href="game.html"> Game </a>
+  <a href="resources.html">Resources</a>
+  <link rel="stylesheet" href="petsite.css">
+</div>
+	<link rel="stylesheet" href="petsite.css">
+<style>
+.container {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+.container a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.show {
+    display: block;
+}
+</style>
+</head>
+<body>
 
-<div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
+<div class="container">
+  <a href="#home">Home</a>
+  <a href="https://www.peninsulahumanesociety.org/adopt/">Peninsula Humane Society and SPCA</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Dropdown</button>
+    
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
 </div>
 
 <script>
-
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
-
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
       }
-    }
   }
 }
 </script>
  <body>  
 <ul>
 <li> <a href="http://www.petsinneed.org/project/rey/"> <img src="http://www.petsinneed.org/wp-content/uploads/2017/04/Rey-580x460.jpg" alt="HTML5 Icon" style="width:128px;height:128px;"> <br /> The name of this dog is called Rey she is currently living in a pet shelter called PETS IN NEED. It is in Redwood city,CA  </a> </li>
-
+<li> <a href="http://www.petsinneed.org/project/jane/">The name of this dog is called Jane she is currently living in a pet shelter called PETS IN NEED. It is in Redwood city,CA <img src="http://www.petsinneed.org/wp-content/uploads/2017/04/IMG_5066-580x460.jpg" alt="HTML5 Icon" style="width:90px;height:90px;"> </a> </li>
+<li> <a href="http://www.petsinneed.org/project/ewok/">The name of this dog is called Ewok he is currently living in a pet shelter called PETS IN NEED. It is in Redwood city. CA <img src="http://www.petsinneed.org/wp-content/uploads/2017/02/ewok2-820x527.jpg" alt="HTML5 Icon" style="width:128px;height:128px;"> </a> </li>
 
 	
 
@@ -100,7 +154,6 @@ window.onclick = function(event) {
     background-color: #333;
     font-family: Arial;
 }
-
 .container a {
     float: left;
     font-size: 16px;
@@ -109,12 +162,10 @@ window.onclick = function(event) {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 .dropdown {
     float: left;
     overflow: hidden;
 }
-
 .dropdown .dropbtn {
     cursor: pointer;
     font-size: 16px;    
@@ -124,11 +175,9 @@ window.onclick = function(event) {
     padding: 14px 16px;
     background-color: inherit;
 }
-
 .container a:hover, .dropdown:hover .dropbtn {
     background-color: black;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -137,7 +186,6 @@ window.onclick = function(event) {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-
 .dropdown-content a {
     float: none;
     color: black;
@@ -146,11 +194,9 @@ window.onclick = function(event) {
     display: block;
     text-align: left;
 }
-
 .dropdown-content a:hover {
     background-color: #ddd;
 }
-
 .show {
     display: block;
 }
@@ -171,11 +217,9 @@ window.onclick = function(event) {
 </div>
 
 <script>
-
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
-
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
@@ -187,11 +231,4 @@ window.onclick = function(e) {
 }
 </script>
 </body>
-</html>
-
-		
-		
-		
-		
-		
-		
+</html>		
