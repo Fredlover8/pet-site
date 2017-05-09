@@ -2,7 +2,7 @@
 <html>
 <head>
 <style>
-body {margin:0;}
+ {margin:0;}
 .topnav {	
   overflow: hidden;
   background-color: #333;
@@ -26,7 +26,6 @@ body {margin:0;}
 }
 </style>
 </head>
-<body>
 
 <div class="topnav">
 	<a href="index.html">Home</a>
@@ -89,50 +88,8 @@ body {margin:0;}
 }
 </style>
 </head>
-<body>
 
-<div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">Dogs and puppies</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="http://www.wonderdogrescue.org/adopt">Wonder dog rescue</a>
-    <a href="https://www.rocketdogrescue.org/adopt/adoptees/">Rocket dog rescue</a>
-    <a href="http://www.labrescue.org"> Golden Gate Labrador Retriver Rescue</a>
-	  <a href="https://carepets.org/animals/">Companion Animal rescue effort</a>
-	  <a href="http://www.petsinneed.org/pets/">PETS IN NEED</a>
-	  
-	  <div class="dropdown">
-		  <button onclick="myfunction()" class="dropbtn">Cats</button>
-		  <div id="myDropdown" class="dropdown-content">
-			  <a href="https://www.peninsulahumanesociety.org/adopt/">Peninsula Humane Society and SPCA</a>
-			  <a href="http://www.sanjoseanimals.com/index.aspx?NID=1389">San Jose animal care center</a>
-			  <a href="http://safehavenanimalsanctuary.org/adopt/index.php">Safe haven animal sanctuary</a>
-			  <a href="http://www.petsinneed.org/pets/">PETS IN NEED</a>
-			  
-			  <div class="dropdown">
-		  <button onclick="myfunction()" class="dropbtn">Small animals</button>
-		  <div id="myDropdown" class="dropdown-content">
-			  <a href="https://www.peninsulahumanesociety.org/adopt/">Peninsula Humane Society and SPCA</a>
-			  <a href="http://www.sanjoseanimals.com/index.aspx?NID=1389">San Jose animal care center</a>
-			  
-			  
-  </div>
-	</div>
-	
-
-<script>
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-    var myDropdown = document.getElementById("myDropdown");
-      if (myDropdown.classList.contains('show')) {
-        myDropdown.classList.remove('show');
-      }
-  }
-}
-</script>
- <body>  
+</script> 
 <ul>
 
 <li> <a href="http://www.petsinneed.org/pets/">The name of this Pet shelter is called PETS IN NEED. It is in Redwood city,CA. It consists of dogs and cats <img src="http://www.petsinneed.org/wp-content/uploads/2017/04/IMG_5066-580x460.jpg" alt="HTML5 Icon" style="width:90px;height:90px;"> </a> </li>
@@ -211,21 +168,6 @@ window.onclick = function(e) {
     display: block;
 }
 </style>
-</head>
-
-<script>
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-    var myDropdown = document.getElementById("myDropdown");
-      if (myDropdown.classList.contains('show')) {
-        myDropdown.classList.remove('show');
-      }
-  }
-}
 </script>
 </body>
 </html>	
