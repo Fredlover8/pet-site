@@ -1,11 +1,9 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
-  <body>
-  <link rel="stylesheet" href="petsite.css">
 <style>
- {margin:0;}
-.topnav {
+body {margin:0;}
+.topnav {	
   overflow: hidden;
   background-color: #333;
 }
@@ -28,140 +26,206 @@
 }
 </style>
 </head>
+<body>
 
 <div class="topnav">
-  <a class="active" href="#home">Home</a>
+	<a href="index.html">Home</a>
   <a href="game.html"> Game </a>
   <a href="resources.html">Resources</a>
+  <link rel="stylesheet" href="petsite.css">
+</div>
+	<link rel="stylesheet" href="petsite.css">
+<style>
+.container {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+.container a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.show {
+    display: block;
+}
+</style>
+</head>
+<body>
 
+<div class="container">
+  <a href="#home">Home</a>
+  <a href="https://www.peninsulahumanesociety.org/adopt/">Peninsula Humane Society and SPCA</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Dropdown</button>
+    
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
 </div>
 
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+ <body>  
+<ul>
+<li> <a href="http://www.petsinneed.org/project/rey/"> <img src="http://www.petsinneed.org/wp-content/uploads/2017/04/Rey-580x460.jpg" alt="HTML5 Icon" style="width:128px;height:128px;"> <br /> The name of this dog is called Rey she is currently living in a pet shelter called PETS IN NEED. It is in Redwood city,CA  </a> </li>
 
 
-<!DOCTYPE html>
-<html>
+	
+
+<li> <a  href="https://www.peninsulahumanesociety.org/adopt/"> The name of this pet shelter is called Peninsula Humane Society and SPCA. It is in Palo Alto,CA. This shelter consists of animals such as Birds, Cats, Guinea pigs, Dogs, Reptiles and small animals<img src="https://02f0a56ef46d93f03c90-22ac5f107621879d5667e0d7ed595bdb.ssl.cf2.rackcdn.com/sites/114/photos/16506/harry_scarlet_macaw20130205-22903-1cs5f77-0_960x.jpg"alt="HTML5 Icon" style="width:90px;height:90px;"> </a> </li>
+
+<li> <a href="https://carepets.org/animals/"> The name of this shelter is called Companian animal rescue effort. It is in San Jose,CA. It consists of dogs and puppies. <img src="http://cdn.pcwallart.com/images/cute-dogs-and-puppies-husky-wallpaper-3.jpg"alt="HTML5 Icon" style="width:90px;height:90px;"> </a> </li>
+
+	<li> <a href="http://www.sanjoseanimals.com/index.aspx?NID=1389"> The name of this shelter is called san jose animal care center.It is in San Jose,CA. It consists of dogs, cats, guinea pigs,rabbits, hamsters and mice. <img src="http://dora.missouri.edu/wp-content/uploads/2012/11/guinea-pig-tan.jpg" alt="HTML5 Icon" style="width:90px;height:90px;"> </a> </li>
+		
+	<li> <a href="http://safehavenanimalsanctuary.org/adopt/index.php"> The name of this shelter is safe haven animal sanctuary.It is in San Jose,CA. It consits of cats and dogs <img src="https://s-media-cache-ak0.pinimg.com/736x/07/c3/45/07c345d0eca11d0bc97c894751ba1b46.jpg"alt="HTML5 Icon" style="width:90px;height:90px;"> </a> </li>	
+				
+	<li> <a href="http://www.sfanimalcare.org"> The name of this pet shelter is San francisco Animal care and control. It is in San Francisco,CA </a> </li>
+
+<li> <a href="http://www.wonderdogrescue.org/adopt"> The name of this pet shelter is Wonder dog rescue. It is in San Francisco,CA. It consists of dogs and puppies <img src= "https://img.buzzfeed.com/buzzfeed-static/static/2016-04/8/15/enhanced/webdr04/enhanced-15662-1460142584-9.jpg"alt="HTML5 Icon" style="width:90px;height:90px;"> </a> </li>
+
+<li> <a href="https://www.rocketdogrescue.org/adopt/adoptees/"> The name of this pet shelter is rocket dog rescue. It is in San Francisco,CA. It consists of dogs <img src="http://www.cutenessoverflow.com/wp-content/uploads/2016/02/635904829031159450909830593_wSUnLXcox9S1OwlVdeQ872FjsxHcMRrSNv3Tlg2VxsTlCWIcyqCwIKVvHc1LxeV2tBTGHtblvEeAaUyRC7iukhJyfqViI5_fILSjsYNZxghGgNNOFqlebRRubrReYj_d_A.jpg" alt="HTML5 Icon" style="width:90px;height:90px;"> </a> </li>	
+
+<li> <a href="http://www.labrescue.org"> The name of this pet shelter is Golden Gate Labrador Retriver Rescue. It is in San Francisco,CA. It consists of labradoodles <img src="http://cdn2-www.dogtime.com/assets/uploads/gallery/labradoodle-dog-breed-pictures/face-4.jpg"alt="HTML5 Icon" style="width:90px;height:90px;"> </a> </li>
+
+</ul>
+
+<div style="padding-left:16px">
+</div>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {box-sizing:border-box}
-body {font-family: Verdana,sans-serif;}
-.mySlides {display:none}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+.container {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
 }
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+.container a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+.dropdown {
+    float: left;
+    overflow: hidden;
 }
-
-
-.dot {
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
 }
-
-.active {
-  background-color: #717171;
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
 }
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+.dropdown-content a:hover {
+    background-color: #ddd;
 }
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+.show {
+    display: block;
 }
 </style>
 </head>
 
-
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="https://cloud.githubusercontent.com/assets/25572357/25829045/ae9b5d10-3408-11e7-8ce4-34902524ac31.jpeg" style="width:100%">
+<div class="container">
+  <a href="#home">Home</a>
+  <a href="https://www.peninsulahumanesociety.org/adopt/">Peninsula Humane Society and SPCA</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Dropdown</button>
+    
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
 </div>
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="https://inspirationseek.com/wp-content/uploads/2016/02/Cute-Dog-Golden-Retriever-Pictures.jpg" style="width:100%">
-  
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="http://www.findcatnames.com/wp-content/uploads/2014/09/453768-cats-cute.jpg" style="width:100%">
-</div>
-
-
-  
-
-
-<br>
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span>
 
 <script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
 }
 </script>
-
 </body>
-</html> 
-
+</html>
